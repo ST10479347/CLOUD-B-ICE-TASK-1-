@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\emeris\\Documents\\cldv_act_2.1 - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C31839D-E05E-125D-7767-D3BA98BBFDD5}|cldv_act_2.1.csproj|c:\\users\\emeris\\documents\\cldv_act_2.1 - copy\\startazurite.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{5C31839D-E05E-125D-7767-D3BA98BBFDD5}|cldv_act_2.1.csproj|solutionrelative:startazurite.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StartAzurite.bat",
+              "DocumentMoniker": "C:\\Users\\emeris\\Documents\\cldv_act_2.1 - Copy\\StartAzurite.bat",
+              "RelativeDocumentMoniker": "StartAzurite.bat",
+              "ToolTip": "C:\\Users\\emeris\\Documents\\cldv_act_2.1 - Copy\\StartAzurite.bat",
+              "RelativeToolTip": "StartAzurite.bat",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2026-07-30T18:49:49.526Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

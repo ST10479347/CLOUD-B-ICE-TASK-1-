@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">University Course Enrollment System</h1>
+    <p>Manage courses, students, and enrollment requests.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h3>@ViewBag.CourseCount</h3>
+                <p>Courses Available</p>
+                <a asp-controller="Courses" asp-action="Index" class="btn btn-primary">View Courses</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h3>@ViewBag.StudentCount</h3>
+                <p>Registered Students</p>
+                <a asp-controller="Students" asp-action="Index" class="btn btn-primary">View Students</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿@model cldv_act_2._1.Models.Course
+
+@{
+    ViewData["Title"] = "Course Details";
+}
+
+<h2>Course Details</h2>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-3">Course Code</dt>
+        <dd class="col-sm-9">@Model.CourseCode</dd>
+
+        <dt class="col-sm-3">Course Name</dt>
+        <dd class="col-sm-9">@Model.CourseName</dd>
+
+        <dt class="col-sm-3">Instructor</dt>
+        <dd class="col-sm-9">@Model.Instructor</dd>
+
+        <dt class="col-sm-3">Capacity</dt>
+        <dd class="col-sm-9">@Model.Capacity</dd>
+    </dl>
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.RowKey" class="btn btn-warning">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

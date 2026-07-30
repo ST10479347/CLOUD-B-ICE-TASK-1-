@@ -1,0 +1,42 @@
+﻿@model List<cldv_act_2._1.Models.Student>
+
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h2>Students</h2>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Add New Student</a>
+    <a asp-action="ProcessQueue" class="btn btn-warning">Process Enrollment Queue</a>
+</p>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info">@TempData["Message"]</div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Enrolled Courses</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Name</td>
+                <td>@student.Email</td>
+                <td>@student.EnrolledCoursesRaw</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@student.RowKey" class="btn btn-sm btn-info">Details</a>
+                    <a asp-action="Edit" asp-route-id="@student.RowKey" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@student.RowKey" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="StartAzurite.bat" />
+  </Folder>
+  <Project Path="cldv_act_2.1.csproj" />
+</Solution>

@@ -1,0 +1,41 @@
+﻿@model cldv_act_2._1.Models.Student
+
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+<h2>@Model.Name</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Email</dt>
+    <dd class="col-sm-9">@Model.Email</dd>
+
+    <dt class="col-sm-3">Enrolled Course IDs</dt>
+    <dd class="col-sm-9">@Model.EnrolledCoursesRaw</dd>
+</dl>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info">@TempData["Message"]</div>
+}
+
+<h4>Enroll in a Course</h4>
+<form asp-action="Enroll" method="post" class="mb-4">
+    <input type="hidden" name="studentId" value="@Model.RowKey" />
+    <div class="row g-2">
+        <div class="col-auto">
+            <select name="courseId" class="form-select">
+                @foreach (var course in (List<cldv_act_2._1.Models.Course>)ViewBag.AllCourses)
+                {
+                    <option value="@course.RowKey">@course.CourseCode - @course.CourseName</option>
+                }
+            </select>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success">Enroll</button>
+        </div>
+    </div>
+</form>
+
+<a asp-action="Edit" asp-route-id="@Model.RowKey" class="btn btn-warning">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
